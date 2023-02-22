@@ -167,8 +167,8 @@ public class Transportation implements
       false
     );
     MINZOOMS = Map.ofEntries(
-      entry(FieldValues.CLASS_PATH, 12),
-      entry(FieldValues.CLASS_TRACK, 12),
+      entry(FieldValues.CLASS_PATH, 11),
+      entry(FieldValues.CLASS_TRACK, 11),
       entry(FieldValues.CLASS_SERVICE, 10),
       entry(FieldValues.CLASS_MINOR, 10),
       entry(FieldValues.CLASS_RACEWAY, 10),
@@ -405,8 +405,8 @@ public class Transportation implements
     } else {
       String baseClass = highwayClass.replace("_construction", "");
       minzoom = switch (baseClass) {
-        case FieldValues.CLASS_SERVICE -> 12;
-        case FieldValues.CLASS_TRACK, FieldValues.CLASS_PATH -> 12;
+        case FieldValues.CLASS_SERVICE -> 11;
+        case FieldValues.CLASS_TRACK, FieldValues.CLASS_PATH -> 11;
         default -> MINZOOMS.get(baseClass);
       };
     }

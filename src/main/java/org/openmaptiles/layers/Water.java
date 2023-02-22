@@ -119,7 +119,7 @@ public class Water implements
         .setMinZoom(6)
         .setAttr(Fields.ID, element.source().id())
         .setAttr(Fields.INTERMITTENT, element.isIntermittent() ? 1 : 0)
-        .setAttrWithMinzoom(Fields.BRUNNEL, Utils.brunnel(element.isBridge(), element.isTunnel()), 12)
+        .setAttrWithMinzoom(Fields.BRUNNEL, Utils.brunnel(element.isBridge(), element.isTunnel()), 11)
         .setAttr(Fields.CLASS, clazz);
     }
   }
