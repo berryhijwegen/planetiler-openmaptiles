@@ -400,8 +400,6 @@ public class Transportation implements
     int minzoom;
     if ("pier".equals(element.manMade())) {
       minzoom = 12;
-    } else if (isResidentialOrUnclassified(highway)) {
-      minzoom = 10;
     } else {
       String baseClass = highwayClass.replace("_construction", "");
       minzoom = switch (baseClass) {
